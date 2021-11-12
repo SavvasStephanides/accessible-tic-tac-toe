@@ -1,0 +1,48 @@
+#app{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #512D6D;
+}
+#board{
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#board .tile{
+    width: 150px;
+    height: 150px;
+    background-color: #EEE;
+    border: 6px solid transparent;
+    display: flex;
+    position: relative;
+}
+
+#board .tile:hover{
+    background-color: #00C1D4;
+    
+}
+
+#board .tile .tile-flag{
+    margin: auto;
+    font-size: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #512D6D;
+}
+
+#board .tile .action-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+}
+
+#board .tile:focus-within .action-button{
+    opacity: 1;
+}

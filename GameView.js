@@ -1,6 +1,5 @@
 function GameView(){
     this.displayBoard = displayBoard
-    this.tileClickEvent = tileClickEvent
 
     function displayBoard(){
         let boardElement = document.querySelector("#board")
@@ -17,15 +16,7 @@ function GameView(){
             flagElement.innerHTML = tile.flag
 
             tileElement.addEventListener("click", () => {
-                game.playNextRound({
-                    horizontal: tile.horizontalPosition,
-                    vertical: tile.verticalPosition
-                })
-                displayBoard()
-
-                if(game.gameHasEnded()){
-                    alert(`Game over!`)
-                }
+                tileClickEvent(tile)
             })
 
             tileElement.appendChild(flagElement)
@@ -33,14 +24,12 @@ function GameView(){
         })
     }
 
-    function tileClickEvent(e){
-        let tile = e.target
-
+    function tileClickEvent(tile){
         game.playNextRound({
-            horizontal: tile.getAttribute("horizontal"),
-            vertical: tile.getAttribute("vertical"),
+            horizontal: tile.horizontalPosition,
+            vertical: tile.verticalPosition
         })
-
+        
         displayBoard()
 
         if(game.gameHasEnded()){

@@ -7,16 +7,26 @@
     <title>Tic tac toe</title>
     <script src="Game.js"></script>
     <script src="GameView.js"></script>
+    <script src="Announcer.js"></script>
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
     <div id="app">
+        <div id="accessibility-controls">
+            <a href="#board" class="control">Skip to board</a>
+            <button id="announcer-button" class="control" onclick="announcer.announceBoardStatus(game.board)">Announce board</button>
+        </div>
+        
         <div id="board">
         </div>
     </div>
+
+    <div id="announcer" aria-live="assertive"></div>
     <script>
         var game = new Game()
         var gameView = new GameView()
+        var announcer = new Announcer()
+
         gameView.displayBoard()
     </script>
 </body>

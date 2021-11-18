@@ -25,7 +25,6 @@
 
 #board .tile:hover{
     background-color: #00C1D4;
-    
 }
 
 #board .tile .tile-flag{
@@ -45,4 +44,19 @@
 
 #board .tile:focus-within .action-button{
     opacity: 1;
+}
+
+#accessibility-controls{
+    position: fixed;
+    background-color: white;
+    top: 100%;
+}
+
+#accessibility-controls:focus-within{
+    top: 0;
+}
+
+#accessibility-controls .control{
+    display: block;
+    padding: 15px;
 }

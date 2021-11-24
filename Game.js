@@ -15,8 +15,8 @@ function Game(){
     
         let board = []
     
-        for(let x = 0 ; x < tileLabels.horizontal.length ; x++){
-            for(let y = 0 ; y < tileLabels.vertical.length ; y++){
+        for(let y = 0 ; y < tileLabels.vertical.length ; y++){
+            for(let x = 0 ; x < tileLabels.horizontal.length ; x++){
                 board.push({
                     horizontalPosition: tileLabels.horizontal[x],
                     verticalPosition: tileLabels.vertical[y],

@@ -1,6 +1,6 @@
 # accessible-tic-tac-toe
 
-![](https://user-images.githubusercontent.com/478770/144205539-955b5854-830e-44f2-ac1e-105c43d17f69.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1636917105614/h8aawCY2k.gif)
 
 Demo project made for the article [Let's create an accessible tic-tac-toe game](https://savvasstephanides.hashnode.dev/lets-create-an-accessible-tic-tac-toe-game) on Hashnode.
 

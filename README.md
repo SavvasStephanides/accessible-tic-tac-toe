@@ -2,7 +2,7 @@
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1636917105614/h8aawCY2k.gif)
 
-Demo project made for the article [Let's create an accessible tic-tac-toe game](https://savvasstephanides.hashnode.dev/lets-create-an-accessible-tic-tac-toe-game) on Hashnode.
+Demo project made for the article [*Let's create an accessible tic-tac-toe game*](https://savvasstephanides.hashnode.dev/lets-create-an-accessible-tic-tac-toe-game) on Hashnode.
 
 See [playable demo](https://savvas.me/stuff/accessible-tictactoe/).
 
